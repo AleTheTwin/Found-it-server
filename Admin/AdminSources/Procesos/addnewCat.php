@@ -1,8 +1,8 @@
 <?php
-define('DB_SERVER', 'found-it-db.cft2hvdqqkde.us-east-1.rds.amazonaws.com');
+define('DB_SERVER', 'alethetwin.online');
 define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'root1234');
-define('DB_NAME', 'found-it-db');
+define('DB_PASSWORD', 'Ionos-db-2021');
+define('DB_NAME', 'found-it');
 $mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);    
 $sql = "insert into Categoria values ('".$_POST["catg"]."','')";
     if ($mysqli->query($sql) === TRUE) {
