@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sources/messages.css">
+    
+    <title>Document</title>
+    
+</head>
+<body style="background-color: black;">
+    <div class="msg-box">
+        <div class="msg-header" onclick="closeMsgBox(this)">
+            <a  class="msg-header-text">Mensajes</a>
+        </div >
+        <div id="msg-content" class="msg-content-open">
+            <div class="msg-content2 invisible">
+                <div id="msg-01" onclick="openMsg(this)" class="msg-content container-fluid">
+                    <img class="msg-prophile-photo" src="https://www.lapi.com.mx/si-storage/Ecommerce/Images/57/57067/115321.png">
+                    <a  class="msg-username">Username</a>
+                </div>
+                <div id="msg-02" onclick="openMsg(this)" class="msg-content container-fluid">
+                    <img class="msg-prophile-photo" src="https://www.lapi.com.mx/si-storage/Ecommerce/Images/57/57067/115321.png">
+                    <a class="msg-username">Username2</a>
+                </div>
+            </div>
+            <div class="msg-content2 ">
+                <!-- <button>volver</button> -->
+                <div id="msg-content2">
+                    <div class="chatbox-conatiner">
+                        <div class="chatbox">
+                            <img src="https://www.lapi.com.mx/si-storage/Ecommerce/Images/57/57067/115321.png" alt="Avatar" style="width:100%;">
+                            <p>Hello. How are you today?</p>
+                            <span class="time-right">11:00</span>
+                        </div>
+                        <div class="chatbox darker">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVLcorRNT36LdRFhoLAq-XZo9ASL17lS6Aw&usqp=CAU" alt="Avatar" class="right" style="width:100%;">
+                            <p>Hey! I'm fine. Thanks for asking!</p>
+                            <span class="time-left">11:01</span>
+                        </div>
+                        <div class="chatbox">
+                            <img src="https://www.lapi.com.mx/si-storage/Ecommerce/Images/57/57067/115321.png" alt="Avatar" style="width:100%;">
+                            <p>Sweet! So, what do you wanna do today?</p>
+                            <span class="time-right">11:02</span>
+                        </div>
+                        <div class="chatbox">
+                            <img src="https://www.lapi.com.mx/si-storage/Ecommerce/Images/57/57067/115321.png" alt="Avatar" style="width:100%;">
+                            <p>Hello. How are you today?</p>
+                            <span class="time-right">11:00</span>
+                        </div>
+                        <div class="chatbox darker">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVLcorRNT36LdRFhoLAq-XZo9ASL17lS6Aw&usqp=CAU" alt="Avatar" class="right" style="width:100%;">
+                            <p>Hey! I'm fine. Thanks for asking!</p>
+                            <span class="time-left">11:01</span>
+                        </div>
+                        <div class="chatbox">
+                            <img src="https://www.lapi.com.mx/si-storage/Ecommerce/Images/57/57067/115321.png" alt="Avatar" style="width:100%;">
+                            <p>Hello. How are you today?</p>
+                            <span class="time-right">11:00</span>
+                        </div>
+                        <div class="chatbox darker">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVLcorRNT36LdRFhoLAq-XZo9ASL17lS6Aw&usqp=CAU" alt="Avatar" class="right" style="width:100%;">
+                            <p>Hey! I'm fine. Thanks for asking!</p>
+                            <span class="time-left">11:01</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox-input container-fluid">
+                    <button onclick="closeMsg()">Volver</button>
+                    <input type="text" name="msg" id="msg" placeholder="Mensaje">
+                    <button> <img src="data:image/png;base64,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" 
+                        alt="" width="20px"></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/msg.js"></script>
+</body>
+</html>
+
+

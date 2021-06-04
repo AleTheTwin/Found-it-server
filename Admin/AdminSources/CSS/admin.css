@@ -1,0 +1,78 @@
+.atributo-number{
+    width: 15px;
+    min-width: 55px;
+}
+.atributo-name{
+    width: 15px;
+    min-width: 50%;
+}
+.contenedor input{
+    width: 15px;
+    min-width: 60%;
+}
+.first{
+    margin: 0;
+    padding:0;
+}
+.consideraciones{
+    text-align: center;
+    font-style: italic;
+    font-weight: 150;
+}
+.add-Atributo{
+    height: 45px;
+    width:  45px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #0962bbc7;
+    border-radius: 0 0 50% 50%;
+    border: 0;
+}
+.add-Atributo:hover{
+    border: 1px;
+    height: 50px;
+}
+.add-Atributo:focus{
+    border: 3px;
+    outline: none;
+    box-shadow: none;
+}
+.addBtn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #0575E6;
+    background: -webkit-linear-gradient(to bottom, #0962bb, #0962bb88);
+    background: linear-gradient(to bottom, #0962bb, #0962bbcc);
+}
+.menuAdmin{
+    display: block;
+    margin-top: 60px;
+    padding-top: 60px;
+    min-height: 100%;
+    width: 100%;
+    border: 1px solid;
+    color: #fff;
+    font-size: bold;
+    border-style: none;
+    background: #0f66bdad;
+}
+.accionAdmin{
+    padding: 30px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    font-size: larger;
+}
+
+.accionAdmin li:hover{
+    font-size: x-large;
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: 400;
+}
+.accionAdmin li:hover a{
+    text-decoration: none;
+}
